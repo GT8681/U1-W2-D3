@@ -225,6 +225,27 @@ console.log(crew);
   Una volta fatto, modifica la massa di qualche elemento dell'equipaggio e vedi se riesci ad ottenere un messaggio diverso.
 */
 
+switch(true){
+  case crewMass < 500:
+    console.log("Ship is under loaded");
+    break
+    case crewMass > 500 && crewMass < 700:
+    console.log("Ship is half loaded");
+    break
+    case crewMass > 700 && crewMass < 900:
+    console.log("Warning: Load is over 700");
+    break
+    case crewMass > 900 && crewMass < 1000:
+    console.log("Critical Load: Over 900");
+    break
+    case crewMass > 1000:
+    console.log("DANGER! OVERLOAD ALERT: escape from ship now!");
+    break
+    default:
+      console.log('no data provided');
+
+}
+
 /* ESERCIZIO 8
   Usa un for loop per cambiare il valore della proprietà "gender" di alcuni personaggi dal valore "n/a" a "robot" (Tip: puoi effettuare la riassegnazione del valore corrispondente o creare un nuovo array)
 */
